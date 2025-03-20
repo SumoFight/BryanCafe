@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bryan's Cafe | About</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="index.html">About</a> </li>
+            <li><a href="menu.html">Menu</a> </li>
+            <li><a href="contact.html">Contact</a> </li>
+        </ul>
+        <ul>
+            <li class="hideOnMobile"><a href="index.html">Bryan's Cafe</a> </li>
+            <li class="hideOnMobile"><a href="index.html">About</a> </li>
+            <li class="hideOnMobile"><a href="menu.html">Menu</a> </li>
+            <li class="hideOnMobile"><a href="contact.html">Contact</a> </li>
+            <li onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+        <div class ='header'>
+            <img src="img/Screenshot 2024-10-16 at 22.57.13.png">
+        </div>
+    </nav>
+
+    <script>
+        function showSidebar(){
+            const sidebar= document.querySelector('.sidebar')
+            sidebar.style.display ='flex'
+        }
+        function hideSidebar(){
+            const sidebar= document.querySelector('.sidebar')
+            sidebar.style.display ='none'
+        }
+    </script>
+    <br>
+
+    <!----About  Body and Text -->
+
+         
+    <div class="about-section">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>About Bryan's Cafe</h2>
+                <p>Welcome to Bryan's Cafe, where every cup of coffee is brewed with passion. Our story began in 2024 in parramata having a skonner and a couple hits from the cone</p>
+                <br>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Banner Section -->
+     
+    <header class="banner">
+        <div class="bannersection">
+            <h1>Welcome to Bryan's Cafe</h1>
+            <p>Your go-to spot for coffee and community in Sydney!</p>
+            <br>
+        </div>  
+    </header>
+
+    <!--Image Section-->
+
+    <section class="image-section">
+        <img src="img/Screenshot 2024-11-03 at 16.25.59.png" alt="Bryan's Cafe interior">
+        <br>
+    </section>
+
+    <!--History Section-->
+    <section class="history">
+        <div>
+            <h2>Our Story</h2>
+            <p>
+                Bryan’s Cafe started with a love for coffee and a passion for bringing people together.
+                From our humble beginnings in Surry Hills, we’ve grown to become a community staple,
+                serving up quality brews and a cozy atmosphere for locals and travelers alike.
+            </p>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map">
+        <h2>Find Us</h2>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=your-google-maps-embed-url" 
+            width="600" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+        </iframe>
+    </section>
+</body>
+
+        <!-----------------Footer---------------->
+
+        <footer class="footer">
+            <div class="footer-content">
+                <p>&copy; 2024 Bryan's Cafe. All rights reserved.</p>
+                <ul class="footer-links">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="privacypolicy.html">Privacy Policy</a></li>
+                </ul>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </footer>
+</html>

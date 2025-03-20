@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Menu </title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="index.html">About</a> </li>
+            <li><a href="menu.html">Menu</a> </li>
+            <li><a href="contact.html">Contact</a> </li>
+        </ul>
+        <ul>
+            <li class="hideOnMobile"><a href="index.html">Bryan's Cafe</a> </li>
+            <li class="hideOnMobile"><a href="index.html">About</a> </li>
+            <li class="hideOnMobile"><a href="menu.html">Menu</a> </li>
+            <li class="hideOnMobile"><a href="contact.html">Contact</a> </li>
+            <li onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+        <div class ='header'>
+            <img src="img/Screenshot 2024-10-16 at 22.57.13.png">
+        </div>
+    </nav>
+
+    <script>
+        function showSidebar(){
+            const sidebar= document.querySelector('.sidebar')
+            sidebar.style.display ='flex'
+        }
+        function hideSidebar(){
+            const sidebar= document.querySelector('.sidebar')
+            sidebar.style.display ='none'
+        }
+    </script>
+
+    <!------------ feautured products ------------>
+        <!-- Meals Table -->
+    <section>
+        <h2>Meals</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Beetroot and feta salad</td>
+                    <td>$15.00</td>
+                    <td>Suitable for vegetarians, made with fresh beetroot</td>
+                </tr>
+                <tr>
+                    <td>Sourdough Rye Sandwich</td>
+                    <td>$18.00</td>
+                    <td>Cheese and salad sandwich made with organic, sourdough rye bread</td>
+                </tr>
+                <tr>
+                    <td>Spinach Pie and Salad</td>
+                    <td>$20.00</td>
+                    <td>Tasty pie with salad</td>
+                </tr>
+                <tr>
+                    <td>Feta pancakes with salad</td>
+                    <td>$19.50</td>
+                    <td>Tasty pancake filled with feta and salad</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Beverages Table -->
+    <section>
+        <h2>Beverages</h2>
+        <br>
+        <h3>Coffee and Hot Chocolates</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Size</th>
+                    <th>Price</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Small</td>
+                    <td>$3.50</td>
+                    <td>For coffee, please inform the staff of the coffee type.</td>
+                </tr>
+                <tr>
+                    <td>Regular</td>
+                    <td>$4.00</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Large</td>
+                    <td>$4.50</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Other Beverages Table -->
+    <section>
+        <h2>Other Beverages</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Soda</td>
+                    <td>$3.00</td>
+                </tr>
+                <tr>
+                    <td>Fresh juice</td>
+                    <td>$6.00</td>
+                </tr>
+                <tr>
+                    <td>Bottled water</td>
+                    <td>$2.00</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</body>
+
+
+<footer class="footer">
+    <div class="footer-content">
+        <p>&copy; 2024 Bryan's Cafe. All rights reserved.</p>
+        <ul class="footer-links">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="privacypolicy.html">Privacy Policy</a></li>
+        </ul>
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
+</footer>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bryan's Cafe | Privacy Policy</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="index.html">About</a> </li>
+            <li><a href="menu.html">Menu</a> </li>
+            <li><a href="contact.html">Contact</a> </li>
+        </ul>
+        <ul>
+            <li class="hideOnMobile"><a href="index.html">Bryan's Cafe</a> </li>
+            <li class="hideOnMobile"><a href="index.html">About</a> </li>
+            <li class="hideOnMobile"><a href="menu.html">Menu</a> </li>
+            <li class="hideOnMobile"><a href="contact.html">Contact</a> </li>
+            <li onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+        <div class ='header'>
+            <img src="img/Screenshot 2024-10-16 at 22.57.13.png">
+        </div>
+    </nav>
+
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+    <br>
+
+<!-- Privacy Policy Content -->
+
+    <div>
+        <main>
+            <section class="privacy-policy">
+                <h1>Privacy Policy</h1>
+                <p>At Bryan's Cafe, we respect your privacy and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, and safeguard your data.</p>
+                
+                <h2>Information We Collect</h2>
+                <p>We may collect personal information when you interact with our website, including but not limited to your name, email address, and contact details. This information is collected to provide a personalized experience and improve our services.</p>
+                
+                <h2>How We Use Your Information</h2>
+                <p>Your information is used to enhance your experience at Bryan's Cafe, including processing orders, responding to inquiries, and updating you on cafe news and promotions.</p>
+                
+                <h2>Data Protection</h2>
+                <p>We take appropriate security measures to protect your information from unauthorized access or disclosure. We implement secure data handling practices to ensure your data is protected.</p>
+                
+                <h2>Your Rights</h2>
+                <p>You have the right to access, update, or request the deletion of your personal information at any time. Please contact us if you wish to exercise these rights.</p>
+                
+                <h2>Changes to This Policy</h2>
+                <p>We may update this Privacy Policy periodically. Any changes will be posted on this page, and the revised date will be noted at the top of the policy.</p>
+                
+                <p>For questions or concerns about our Privacy Policy, please contact us at contact@bryanscafe.com.au.</p>
+            </section>
+        </main>
+    </div>
+</body>
+
+        <!-----------------Footer---------------->
+
+
+<footer class="footer">
+    <div class="footer-content">
+        <p>&copy; 2024 Bryan's Cafe. All rights reserved.</p>
+        <ul class="footer-links">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="privacypolicy.html">Privacy Policy</a></li>
+        </ul>
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
+</footer>
+</html>

@@ -1,0 +1,418 @@
+ /*--Nav Bar--*/
+
+*{
+  margin:0%;
+  padding: 0;
+}
+body{
+  min-height: 100vh;
+  background-image: url(wallpaper.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav{
+  background-color: white;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+nav ul{
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav li{
+  height: 50px;
+}
+nav a{
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+nav a:hover{
+  background-color: #f0f0f0;
+} 
+nav li:first-child{
+  margin-right:auto;
+}
+.sidebar{ 
+  position:fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px; 
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.201);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(202, 190, 190, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.sidebar li{
+  width: 100%;
+}
+.sidebar a{
+  width: 100%;
+}
+/* Hide the sidebar by default */
+.sidebar {
+  display: none;
+}
+
+/* Show the sidebar on small screens */
+
+@media(max-width: 800px){
+  .hideOnMobile{
+      display: none;
+  }
+}
+@media (max-width: 768px) {
+  .sidebar {
+      display: flex;   /* or block, depending on your layout */
+      flex-direction: column;
+  }
+}
+
+/*-------Header and alignment for Banner----*/
+.header {
+    display: flex;
+    justify-content: center; /* Centers the image horizontally */
+    align-items: center; /* Centers the image vertically if needed */
+    width: 100%; /* Make the header take full width */
+    overflow: hidden; /* Hide any overflow if image exceeds the container */
+  }
+  
+  .header img {
+    width: 100vw;         /* Makes it span the full viewport width */
+    height: auto;         /* Maintains the aspect ratio */
+    object-fit: cover;    /* Ensures the image covers the container without stretching */
+}
+
+h2 { 
+    display:flex;
+    justify-content: center;
+}
+
+.history{
+  display:flex;
+  justify-content: center;
+}
+/*---------------------------------*/
+img{
+    width: 750px;
+}
+.small-container {
+    width: 100%; /* Full width of the screen */
+    max-width: 1200px; /* Still keeping that max for large screens */
+    margin: 0 auto; /* Centering */
+    padding: 0 20px; /* Some padding for smaller screens */
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap; /* Wraps to the next line when needed */
+    justify-content: space-between; /* Spread the columns evenly */
+  }
+  
+  .col-4 {
+    flex: 1 1 22%; /* Default for bigger screens */
+    margin-bottom: 30px; /* Space between rows */
+    text-align: center; /* Centering content */
+  }
+  
+  .col-4 img {
+    width: 100%; /* Images will fit the container */
+    max-width: 250px; /* Limit the image size */
+  }
+  
+  /* Responsive tweaks for smaller screens */
+  @media (max-width: 768px) {
+    .col-4 {
+      flex: 1 1 48%; /* 2 columns instead of 4 on tablets */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .col-4 {
+      flex: 1 1 100%; /* Full width (1 column) on small screens */
+    }
+  }
+  
+/*--Footer--*/
+.footer {
+    background-color: #333; /* Dark background */
+    color: #fff; /* White text */
+    padding: 20px 0; /* Some space around the content */
+    text-align: center; /* Center everything */
+    width: 100%; /* Full width */
+  }
+  
+  .footer-content {
+    max-width: 1200px; /* Limit the width of the content */
+    margin: 0 auto; /* Center the content horizontally */
+    padding: 0 20px; /* Padding for smaller screens */
+  }
+  
+  .footer p {
+    margin: 0; /* Remove default margins */
+  }
+  
+  .footer-links {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  .footer-links li {
+    display: inline-block; /* Show links side by side */
+    margin: 0 10px; /* Space between links */
+  }
+  
+  .footer-links a {
+    color: #fff; /* Link color */
+    text-decoration: none; /* No underlines */
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  
+  .social-icons a {
+    margin: 0 10px; /* Space between icons */
+  }
+  
+  .social-icons img {
+    width: 24px; /* Icon size */
+    height: 24px; /* Icon size */
+  }
+  
+  /* Responsive tweaks */
+  @media (max-width: 768px) {
+    .footer-links li {
+      display: block; /* Stack the links vertically on smaller screens */
+      margin: 10px 0; /* Space between links */
+    }
+  }
+  .social-icons a {
+    color: #fff; /* Set icon color to white */
+}
+
+.social-icons a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+  /*------------Contact Form-----------*/
+  form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f3f3f3;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+form header {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+p {
+    font-size: 1em;
+    color: #555;
+    margin-top: 20px;
+}
+/*---------Brranches Div and containers--------*/
+.branches {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.branch {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.branch:last-child {
+  border-bottom: none;
+}
+
+.branch h3 {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.branch p {
+  margin: 2px 0;
+  color: #555;
+}
+/*---------About Page--------*/
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #9b4e2a;
+}
+
+.banner {
+  background-color: #9b4e2a;
+  color: white;
+  padding: 50px;
+  text-align: center;
+}
+
+.bannersection p{
+  font-family: 'Times New Roman', Times, serif;
+  color: #fff;
+}
+
+.about-text p{
+  padding: 10px;
+  text-align: center;
+}
+
+.image-section img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.history, .map {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.map iframe {
+  width: 100%;
+  height: 450px;
+  border: none;
+}
+/*---------Brranches Div and containers--------*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+h2 {
+    color: #4CAF50;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+/*---------Brranches Div and containers--------*/
+
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+.main {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+}
+
+.privacy-policy {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;        /* Light border around the box */
+  border-radius: 8px;            /* Rounded corners (optional) */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  background-color: #fff;        /* Background color for the box */
+}
+.privacy-policy h1 {
+  color: #4CAF50;
+  text-align: center;
+}
+
+.privacy-policy h2 {
+  color: #4CAF50;
+  margin-top: 20px;
+}

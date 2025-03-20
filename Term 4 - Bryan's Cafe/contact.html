@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Bryan's Cafe </title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="index.html">About</a> </li>
+            <li><a href="menu.html">Menu</a> </li>
+            <li><a href="contact.html">Contact</a> </li>
+        </ul>
+        <ul>
+            <li class="hideOnMobile"><a href="index.html">Bryan's Cafe</a> </li>
+            <li class="hideOnMobile"><a href="index.html">About</a> </li>
+            <li class="hideOnMobile"><a href="menu.html">Menu</a> </li>
+            <li class="hideOnMobile"><a href="contact.html">Contact</a> </li>
+            <li onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+        <div class ='header'>
+            <img src="img/Screenshot 2024-10-16 at 22.57.13.png">
+        </div>
+    </nav>
+
+    <script>
+        function showSidebar(){
+            const sidebar= document.querySelector('.sidebar')
+            sidebar.style.display ='flex'
+        }
+        function hideSidebar(){
+            const sidebar= document.querySelector('.sidebar')
+            sidebar.style.display ='none'
+        }
+    </script>
+    
+    <form action="process.php">
+        <header> Contact Form </header>
+        <br>
+
+        <label>
+            First name <input type="text" name="firstname" id="firstname">
+        </label>
+        <br>
+
+        <label>
+            Last name <input type="text" name="lastname" id="lastname">
+        </label>
+        <br>
+
+        <label>
+            Email <input type="email" name="email">
+        </label>
+        <br>
+
+        <label>
+            Message subject: <input type="text" name="subject" id="subject">
+        </label>
+        <br>
+
+        <p>Body:</p>
+            <textarea name="Additionalnote">Type here long texts...</textarea>
+            <br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+    <!---Branches---->
+
+    <div class="branches">
+        <div class="branch">
+            <h3>76 Devonshire St, Surry Hills NSW</h3>
+            <p>Phone: 02 9211 1234</p>
+            <p>Hours: Mon - Fri: 6:00 to 14:30, Sat-Sun: 7:00 to 15:00</p>
+        </div>
+        <div class="branch">
+            <h3>451 Pitt St, Haymarket Sydney, NSW</h3>
+            <p>Phone: 02 9262 5678</p>
+            <p>Hours: Mon - Fri: 6:00 to 16:00, Sat-Sun: 7:00 to 15:00</p>
+        </div>
+        <div class="branch">
+            <h3>31 Alfred Street, Circular Quay, NSW</h3>
+            <p>Phone: 02 8971 9101</p>
+            <p>Hours: Mon - Fri: 6:00 to 16:00, Sat-Sun: 7:00 to 15:00</p>
+        </div>
+    </div>
+
+</body>
+
+    <!-----------------Footer---------------->
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Bryan's Cafe. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="privacypolicy.html">Privacy Policy</a></li>
+            </ul>
+            <div class="social-icons">
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+</html>

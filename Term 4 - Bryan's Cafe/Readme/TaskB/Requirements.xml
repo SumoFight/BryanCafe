@@ -1,0 +1,61 @@
+<!DOCTYPE Requirements [
+    <!ELEMENT Requirements (Feature+)>
+    <!ELEMENT Feature (Name, Description, Priority, Status)>
+    <!ELEMENT Name (#PCDATA)>
+    <!ELEMENT Description (#PCDATA)>
+    <!ELEMENT Priority (#PCDATA)>
+    <!ELEMENT Status (#PCDATA)>
+]>
+
+
+<Requirements>
+    <Feature>
+        <Name>Home Page</Name>
+        <Description>Displays cafe overview and navigation</Description>
+        <Priority>High</Priority>
+        <Status>Completed</Status>
+        <Notes>Ensure easy navigation and appealing design.</Notes>
+    </Feature>
+    <Feature>
+        <Name>Products Page</Name>
+        <Description>Lists menu items with descriptions</Description>
+        <Priority>High</Priority>
+        <Status>In Progress</Status>
+        <Notes>Include high-quality images and pricing.</Notes>
+    </Feature>
+    <Feature>
+        <Name>About Page</Name>
+        <Description>Information about the cafe and its story</Description>
+        <Priority>Medium</Priority>
+        <Status>Not Started</Status>
+        <Notes>Include history and mission statement.</Notes>
+    </Feature>
+    <Feature>
+        <Name>Profile Page</Name>
+        <Description>User account management and settings</Description>
+        <Priority>Medium</Priority>
+        <Status>Not Started</Status>
+        <Notes>Important for customer loyalty programs.</Notes>
+    </Feature>
+    <Feature>
+        <Name>Contact Form</Name>
+        <Description>Allows users to send inquiries</Description>
+        <Priority>High</Priority>
+        <Status>Not Started</Status>
+        <Notes>Must be simple and user-friendly.</Notes>
+    </Feature>
+    <Feature>
+        <Name>Responsive Design</Name>
+        <Description>Mobile-friendly layout</Description>
+        <Priority>High</Priority>
+        <Status>In Progress</Status>
+        <Notes>Essential for mobile customers.</Notes>
+    </Feature>
+    <Feature>
+        <Name>SEO Optimization</Name>
+        <Description>Basic SEO for better visibility</Description>
+        <Priority>Medium</Priority>
+        <Status>Not Started</Status>
+        <Notes>Critical for attracting new customers.</Notes>
+    </Feature>
+</Requirements>
